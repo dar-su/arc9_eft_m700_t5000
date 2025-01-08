@@ -518,7 +518,7 @@ ATT.Category = {"eft_m700_gen3_buffertube"}
 ATT.Attachments = {
     {
         PrintName = "Stock",
-        Category = "eft_ar15_buffertube",
+        Category = {"eft_ar15_buffertube", "eft_ar15_buffertube_notbuffer"},
         Pos = Vector(2.85, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
