@@ -63,7 +63,7 @@ SWEP.RPM = 450
 SWEP.EFTErgo = 33
 SWEP.BarrelLength = 50
 SWEP.Ammo = "ar2"
-SWEP.Firemodes = { { Mode = 1, PrintName = "Bolt-action" },  }
+SWEP.Firemodes = { { Mode = 1, PrintName = "Bolt-action" }, { Mode = 1, PrintName = "Manual reload", ShotgunReload = true, ShouldDropMagEmpty = false },  }
 
 SWEP.ManualAction = true
 SWEP.ManualActionNoLastCycle = true -- wah wah should be true
@@ -578,6 +578,44 @@ SWEP.Animations = {
         EjectAt = 0.46
     },    
     
+    ["reload_start_empty"] = {
+        Source = "sgreload_start_empty",
+        EventTable = {
+            { s = randspin, t = 0.05 },   
+            { s = path .. "rem700_bolt_1.ogg", t = 0.23 - 0.1 },
+            { s = path .. "rem700_bolt_2.ogg", t = 0.5 - 0.1 },
+            { s = randspin, t = 0.78 },   
+        },
+    },     
+    ["reload_start"] = {
+        Source = "sgreload_start",
+        EventTable = {
+            { s = randspin, t = 0.05 },   
+            { s = path .. "rem700_bolt_1.ogg", t = 0.23 - 0.1 },
+            { s = path .. "rem700_bolt_2.ogg", t = 0.5 - 0.1 },
+            { s = randspin, t = 0.78 },     
+        },
+    },    
+    ["reload_insert"] = {
+        Source = "sgreload_insert",
+        EventTable = {
+            { s = path .. "ammo_singleround_pickup.ogg", t = 0 },
+            { s = path .. "generic_jam_shell_ remove_heavy2.ogg", t = 0.51 },
+            { s = randspin, t = 0.53 },   
+        },
+        -- MinProgress = 0
+    },   
+    ["reload_finish"] = {
+        Source = "sgreload_end",
+        MinProgress = 0.95,
+        FireASAP = true,
+        EventTable = {
+            { s = randspin, t = 0.1 },   
+            { s = path .. "rem700_bolt_3.ogg", t = 0.26 - 0.07 },
+            { s = path .. "rem700_bolt_4.ogg", t = 0.47 - 0.03 },
+            { s = randspin, t = 0.63 },    
+        },
+    },
 
     ["inspect1"] = {
         Source = "look",
