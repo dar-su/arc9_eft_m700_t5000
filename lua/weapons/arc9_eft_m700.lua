@@ -586,6 +586,11 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_2.ogg", t = 0.5 - 0.1 },
             { s = randspin, t = 0.78 },   
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.5, lhik = 1, rhik = 0 },
+            { t = 1, lhik = 1, rhik = 0 },
+        },
     },     
     ["reload_start"] = {
         Source = "sgreload_start",
@@ -595,6 +600,11 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_2.ogg", t = 0.5 - 0.1 },
             { s = randspin, t = 0.78 },     
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.5, lhik = 1, rhik = 0 },
+            { t = 1, lhik = 1, rhik = 0 },
+        },
     },    
     ["reload_insert"] = {
         Source = "sgreload_insert",
@@ -602,6 +612,10 @@ SWEP.Animations = {
             { s = path .. "ammo_singleround_pickup.ogg", t = 0 },
             { s = path .. "generic_jam_shell_ remove_heavy2.ogg", t = 0.51 },
             { s = randspin, t = 0.53 },   
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 1, lhik = 1, rhik = 0 },
         },
         -- MinProgress = 0
     },   
@@ -614,6 +628,12 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_3.ogg", t = 0.26 - 0.07 },
             { s = path .. "rem700_bolt_4.ogg", t = 0.47 - 0.03 },
             { s = randspin, t = 0.63 },    
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 0.35, lhik = 1, rhik = 0 },
+            { t = 0.75, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
         },
     },
 
