@@ -5,21 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-ARC9:AddPhrase("eft_weapon_dvl10", "Lobaev Arms DVL-10", "en")
-ARC9:AddPhrase("eft_weapon_dvl10", "Lobaev Arms ДВЛ-10", "ru")
-ARC9:AddPhrase("eft_weapon_dvl10", "Wobaew Paws DWL-10", "uwu")
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_dvl10")
-SWEP.Description = [[DVL-10 is a lightweight, compact, and silenced rifle in proprietary and current military subsonic calibers. Developed for special service and combat missions where exceptional accuracy and range are needed. Equipped with a standard Lobaev Arms foldable buttstock and Lobaev Hummer Barrels stainless steel match-grade barrel.]]
+SWEP.Description = "eft_weapon_dvl10_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_boltsnip")
+SWEP.Class = "eft_class_weapon_boltsnip"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Lobaev Arms",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "7.62x51mm NATO",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_bolt"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_rus"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2010"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_lobaev",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_762x51",
+    ["eft_trivia_act3"] = "eft_trivia_act_bolt",
+    ["eft_trivia_country4"] = "eft_trivia_country_rus",
+    ["eft_trivia_year5"] = "2010"
 }
 
 SWEP.StandardPresets = {

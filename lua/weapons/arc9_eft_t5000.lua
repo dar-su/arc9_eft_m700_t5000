@@ -5,21 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-ARC9:AddPhrase("eft_weapon_t5000", "ORSIS T-5000M", "en")
-ARC9:AddPhrase("eft_weapon_t5000", "ОРСИС Т-5000М", "ru")
-ARC9:AddPhrase("eft_weapon_t5000", "OWSIS T-50w0M", "uwu")
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_t5000")
-SWEP.Description = [[ORSIS T-5000M is a Russian bolt-action sniper rifle. It was the first product developed by ORSIS, and is produced in their Moscow factory. The rifle was introduced in 2011 at the international exhibition of Russian weapons in Nizhny Tagil, and is entirely original, using no third-party components. The rifle ensures maximum comfort of the user while aiming and shooting, featuring a quick sighting line recovery, high reliability and ergonomics. The stainless steel barrel has a thread for installing a muzzle brake-compensator or a sound suppressor. The equipped muzzle brake-compensator effectively reduces impulse and allows the most comfortable recoil handling.]]
+SWEP.Description = "eft_weapon_t5000_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_boltsnip")
+SWEP.Class = "eft_class_weapon_boltsnip"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "ORSIS",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "7.62x51mm NATO",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_bolt"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_rus"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2011"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_orsis",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_762x51",
+    ["eft_trivia_act3"] = "eft_trivia_act_bolt",
+    ["eft_trivia_country4"] = "eft_trivia_country_rus",
+    ["eft_trivia_year5"] = "2011"
 }
 
 SWEP.StandardPresets = false 
