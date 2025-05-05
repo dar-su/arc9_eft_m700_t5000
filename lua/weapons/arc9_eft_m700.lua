@@ -605,6 +605,8 @@ SWEP.Animations = {
             { t = 0.5, lhik = 1, rhik = 0 },
             { t = 1, lhik = 1, rhik = 0 },
         },
+        RestoreAmmo = -1,
+        EjectAt = 0.45,
     },    
     ["reload_insert"] = {
         Source = "sgreload_insert",
